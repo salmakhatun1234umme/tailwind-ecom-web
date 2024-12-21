@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <header class="bg-white shadow-md z-100 sticky top-0 left-0">
+      <div class="container mx-auto md:px-12 px-6 py-5">
+        <nav class="flex justify-between items-center">
+          <div class="flex justify-center items-center gap-10">
+            <a
+              href="#home"
+              class="md:text-2xl text-xl font-bold hover:text-gray-500"
+              >E_Commerce</a
+            >
+            <ul
+              id="main_menu"
+              class="absolute montserrat hidden md:flex text-center gap-5 md:top-0 md:relative top-16 pb-7 md:pb-0 space-y-4 md:space-y-0 text center w-full left-0 bg-white"
+            >
+              <!-- absolute top-14 md:top-0 space-y-4 md:space-y-0 w-full left-0 bg-white -->
+              <li>
+                <a class="text-xl text-gray-900 hover:text-gray-500" href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="text-xl text-gray-900 hover:text-gray-500" href="#"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a class="text-xl text-gray-900 hover:text-gray-500" href="#"
+                  >Categories</a
+                >
+              </li>
+              <li>
+                <a class="text-xl text-gray-900 hover:text-gray-500" href="#"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="md:space-x-5 space-x-3">
+            <a href="#">
+              <i
+                class="bx text-gray-900 hover:text-gray-500 bx-search-alt-2 text-2xl"
+              ></i
+            ></a>
+            <a href="#">
+              <i
+                class="bx text-gray-900 hover:text-gray-500 bxs-cart text-2xl"
+              ></i
+            ></a>
+            <a href="#">
+              <i
+                class="bx text-gray-900 hover:text-gray-500 bxs-user text-2xl"
+              ></i
+            ></a>
+            <button id="main_button" class="md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- nav end -->
+
+    <!-- banner -->
+    <section id="home"
+      class="flex items-center"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+          url('images/banner3.webp') center/cover no-repeat;
+        height: 75vh;
+      "
+    >
+      <div class="md:ml-24 ml-4 text-white space-y-10">
+        <h1 class="md:text-6xl text-5xl font-bold">Summer Collection</h1>
+        <p class="text-2xl">Discover our latest arrivals with up to 50% off</p>
+        <div>
+          <a
+            class="bg-white z-50 hover:bg-opacity-80 text-xl font-bold py-4 px-6 text-black rounded-lg"
+            href="#"
+            >Shop Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- banner end -->
+    <!-- product -->
+    <section class="container mx-auto md:px-12 px-6 my-20">
+      <h2 class="text-4xl font-bold">Featured Products</h2>
+      <div
+        class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-5 mt-10"
+      >
+        <div class="shadow-md bg-white space-y-5 rounded-lg">
+          <img
+            class="rounded-t-lg h-64 object-cover"
+            src="images/card1.jpeg"
+            alt=""
+          />
+          <div class="space-y-5 p-4">
+            <h3 class="text-2xl font-bold">Casual Shoes</h3>
+            <p>$29.34</p>
+            <div>
+              <button
+                class="bg-gray-900 hover:bg-opacity-90 text-white w-full h-12 rounded-lg"
+              >
+                <a href="/singleProduct.html">Veiw Product</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-md bg-white space-y-5 rounded-lg">
+          <img
+            class="rounded-t-lg h-64 object-cover"
+            src="images/card2.jpg"
+            alt=""
+          />
+          <div class="space-y-5 p-4">
+            <h3 class="text-2xl font-bold">Casual Shoes</h3>
+            <p>$29.34</p>
+            <div>
+              <button
+                class="bg-gray-900 hover:bg-opacity-90 text-white w-full h-12 rounded-lg"
+              >
+                <a href="#">Veiw Product</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-md bg-white space-y-5 rounded-lg">
+          <img
+            class="rounded-t-lg h-64 object-cover"
+            src="images/card3.webp"
+            alt=""
+          />
+          <div class="space-y-5 p-4">
+            <h3 class="text-2xl font-bold">Casual Shoes</h3>
+            <p>$29.34</p>
+            <div>
+              <button
+                class="bg-gray-900 hover:bg-opacity-90 text-white w-full h-12 rounded-lg"
+              >
+                <a href="#">Veiw Product</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-md bg-white space-y-5 rounded-lg">
+          <img
+            class="rounded-t-lg h-64 object-cover"
+            src="images/card4.jpg"
+            alt=""
+          />
+          <div class="space-y-5 p-4">
+            <h3 class="text-2xl font-bold">Casual Bags</h3>
+            <p>$29.34</p>
+            <div>
+              <button
+                class="bg-gray-900 hover:bg-opacity-90 text-white w-full h-12 rounded-lg"
+              >
+                <a href="#">Veiw Product</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product end -->
+
+    <!-- footer -->
+    <footer class="bg-gray-900">
+      <div
+        class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 container mx-auto md:p-12 px-6 text-white"
+      >
+        <div class="space-y-5">
+          <h3 class="text-2xl font-bold">ShopNow</h3>
+          <p class="text-xl">Your one-stop destination for fashion.</p>
+        </div>
+        <div class="space-y-5">
+          <h3 class="text-2xl  font-bold">Quick Links</h3>
+          <p class="text-xl"><a class="hover:text-gray-400" href="#">About Us</a></p>
+          <p class="text-xl"><a class="hover:text-gray-400" href="#">Contact</a></p>
+          <p class="text-xl"><a class="hover:text-gray-400" href="#">FAQs</a></p>
+        </div>
+        <div class="space-y-5">
+          <h3 class="text-2xl font-bold">Categories</h3>
+
+          <p class="text-xl"><a class="hover:text-gray-400" href="#">Men</a></p>
+          <p class="text-xl"><a class="hover:text-gray-400" href="#">Women</a></p>
+          <p class="text-xl"><a class="hover:text-gray-400" href="#">Accessories</a></p>
+        </div>
+        <div class="space-y-5">
+          <h3 class="text-2xl font-bold">Newsletter</h3>
+          <p class="text-xl">Subscribe to get special offers</p>
+          <input
+            class="w-full h-10 rounded-md bg-gray-800 p-6"
+            placeholder="Enter your email"
+            type="email"
+            name=""
+            id=""
+          />
+          <div>
+            <button
+              class="bg-white hover:bg-opacity-70 text-black w-full h-12 rounded-lg"
+            >
+              <a href="#">Subscribe</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="/script.js"></script>
+  </body>
+</html>
